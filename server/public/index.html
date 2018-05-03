@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-route.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <script src="scripts/services/shoes.service.js"></script>
+    <script src="scripts/controllers/shoes.controller.js"></script>
+    <title>Shoes</title>
+</head>
+<body  ng-app="ShoeApp">
+
+    <h1>Shoes!</h1>
+
+    <ul>
+        <li>
+            <a ng-href="#!/">Home</a>
+        </li>
+        <li>
+            <a ng-href="#!/shoes">Shoes</a>
+        </li>
+    </ul>
+    <ng-view></ng-view>
+</body>
+</html>

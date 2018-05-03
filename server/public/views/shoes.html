@@ -1,0 +1,29 @@
+<div ng-controller="ShoeController as vm">
+    <!-- <div>
+    {{vm}}
+    </div> -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="shoe in vm.shoeShelf">
+                <td>
+                    <input type="text" ng-model="shoe.name" />Name
+                </td>
+                <td>
+                    <input type="number" ng-model="shoe.cost" />Cost
+                </td>
+                <!-- <td>
+                    <button ng-model="vm.deleteShoe()">Delete</button>
+                </td>
+                <td>
+                    <button ng-click="vm.editShoe()">Save</button>
+                </td> -->
+            </tr>
+        </tbody>
+    </table>
+</div>
