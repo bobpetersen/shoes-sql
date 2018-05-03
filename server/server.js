@@ -55,6 +55,19 @@ app.post('/shoes', (req, res) => {
     });
 });
 
+app.createShoe = function () {
+  $http({         // small step would be to add console log here first ('new task', self.createTodo)
+    method: 'POST',
+    url: '/shoe',
+    data: self.newShoe,
+  }).then(function(response) {
+    console.log('success on POST ', response);
+    self.shoeArray();
+  }).catch(function (error) {
+    console.log('error on POST ', error);
+  })
+}//end createTodo
+
 // Serve back static files by default
 app.use(express.static('server/public'));
 

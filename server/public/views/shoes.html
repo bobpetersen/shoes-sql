@@ -2,6 +2,14 @@
     <!-- <div>
     {{vm}}
     </div> -->
+    <div class="input-group mb-3" ng-model="vm.newShoe.name">
+        <input type="text" placeholder="Name" ng-model="vm.newShoe.name">
+        <input type="number" placeholder="Cost" ng-model="vm.newShoe.cost">
+        <div ng-submit="vm.createTodo()">
+            <button ng-click="vm.shoe.query">Add Shoe</button>
+            <!-- <input type="date"> -->
+        </div>
+    </div>
     <table>
         <thead>
             <tr>
@@ -12,10 +20,10 @@
         <tbody>
             <tr ng-repeat="shoe in vm.shoeShelf">
                 <td>
-                    <input type="text" ng-model="shoe.name" />Name
+                    <input type="text" ng-model="shoe.name" />
                 </td>
                 <td>
-                    <input type="number" ng-model="shoe.cost" />Cost
+                    <input type="number" ng-model="shoe.cost" />
                 </td>
                 <!-- <td>
                     <button ng-model="vm.deleteShoe()">Delete</button>
